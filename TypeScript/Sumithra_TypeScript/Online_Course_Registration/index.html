@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Online Course Registration</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+        <div id="home">
+            <h1>W3School</h1>
+            <button onclick="Register()">New User</button>
+            <button onclick="SignIn()">Log In</button>
+        </div>
+        <div id="register">
+            <h1>New User</h1><br>
+            <label >Name</label><br>
+            <input type="text" id="name" ><br><br>
+            <label>Age</label><br>
+            <input type="text" id="age" ><br><br>
+            <label>Phone Number</label><br>
+            <input type="number" id="mobileno" ><br>
+            <button onclick="Submit()">Register</button>
+        </div>
+        <div id="enter">
+            <h1>Hello</h1>
+            <br>
+            <label >User Id</label><br>
+            <input type="text" id="userid" placeholder="Enter the UserID">
+            <br><br>
+            <button onclick="Check()">Proceed</button>
+        </div>
+        <div id="option">
+            <div>
+            <h1>Course Details</h1>
+            <button onclick="course()">Available Course</button>  
+            <button onclick="Choice()">Enrolled Course</button><br><br>
+            <button onclick="Home()">Return</button>
+        <div id="subject">
+            <h1>Available Courses</h1>
+            <select name="Courses" id="selection">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="C#">C#</option>
+                <option value="Java Script">Java Script</option>
+                <option value="Type Script">Type Script</option>
+            </select><br>
+            Days<br>
+            <input type="number" id="day"><br>
+            <button onclick="Next()">Proceed</button>
+        </div>
+        <div id="final">
+            <h1>Enrolled Course</h1><br><br>
+            <h3>History of Enrolled Course</h3>
+            <label id="label"></label><br>
+            <label id="days"></label>
+            
+            <br><br>
+            
+            <button onclick="Back()">Return</button>
+            <button onclick="Final()">Available Course</button>
+        </div>
+    </body>
+</html>

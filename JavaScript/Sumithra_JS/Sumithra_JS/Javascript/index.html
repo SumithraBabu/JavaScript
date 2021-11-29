@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="Script/script.js"></script>
+</head>
+<body>
+    
+<div id="home">
+    <h1>Submit Your Application</h1>
+<p>for<b>.NET Developers(Freshers)</b></p>
+</div>
+<h4>Personal Information</h4>
+<form  class="form"onsubmit="validate()" action="">
+    <p>Enter the name<span style="color: red;">*</span><label id="valuee1" style="visibility: hidden;color: red;"> Null Value Invalid!</label></p>
+    <input class="value" id="name" type="text" placeholder="Name">
+    <p>Father's Name<span style="color: red;">*</span><label id="value2" style="visibility: hidden;color: red;"> Null Value Invalid!</label></p>
+    <input class="value" id="fname" type="text" placeholder="LastName"> <br>
+    <p>Email<span style="color: red;">*</span><label id="value3" style="visibility: hidden;color: red;">Null Value Invalid!</label></p>
+    <input class="value" id="email" type="text" placeholder="MailId">
+    <p>Date of Birth<span style="color: red;">*</span><label id="value4" style="visibility: hidden;color: red;">Null Value Invalid!</label></p>
+    <input class="value1" id="dob" type="text" placeholder="DOB">
+    <p>Phone Number <span style="color: red;">*</span><label id="value5" style="visibility:hidden ;color: red;">Null Value Invalid!</label></p>
+    <input class="value1" id="mobnum" type="text" placeholder="Mobile No" >
+    <p>Current Address <span style="color: red;">*</span><label id="value6" style="visibility: hidden;color: red;">Null Value Invalid!</label></p>
+    <input class="value" id="address1" type="text" placeholder="Building Name/Street Name">
+    <input class="value" id="address2" type="text" placeholder="City">
+    <input class="value1" id="address3" type="text" placeholder="District">
+    <select  name="state" id="states">
+        <option value="Tamilnadu" selected >Tamilnadu</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Telungana">Telungana</option>
+
+    </select>
+    <p><label id="value8" style="visibility: hidden;color: red;">Null Value Invalid!</label></p>
+    <input class="value" id="pincode" type="text" placeholder="Pincode">
+    
+    <div id="address">
+        <pre id="add1" onclick="sameAdd()"> Permanent Address <span style="color: red;">*</span><input id="add2" type="checkbox">same as present Address</pre>
+        <input class="value" id="address4" type="text" placeholder="Building Name/Street Name">
+        <input class="value" id="address5" type="text" placeholder="City">
+        <input class="value" id="address6" type="text" placeholder="District">
+        <select name="state" id="st1">
+            <option value="Tamilnadu" selected >Tamilnadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Telungana">Telungana</option>
+    
+        </select>
+        <p><label id="labe10" style="visibility: hidden;color: red;">Null Value Invalid!</label></p>
+    <input class="value" id="pincode1" type="text" placeholder="Pincode">
+
+    </div>
+    <p>Upload Profile Photo<label id="value8" style="visibility: hidden;color: red;">Null Value Invalid!</label></p>
+    <button id="up" type="file" placeholder="choose file"> Choose File</button><label id="file button" style="visibility: hidden;"></label>
+    <br>
+    <br>
+    <button id="button1" type="button" onclick=" return validate()">Submit</button>
+</form>
+</body>
+</html>

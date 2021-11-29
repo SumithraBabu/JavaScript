@@ -1,0 +1,27 @@
+button
+{
+    background-color: orange;
+}
+body{
+    text-align: center;
+}
+label
+{
+    text-align: justify;
+}
+#home
+{
+    display: none;
+}
+#register,#enter,#option,#subject,#final
+{
+    display: none;
+}
+div{
+    width: 50%;
+    float: left;
+}
+#final
+{
+    width: 100%;
+}
